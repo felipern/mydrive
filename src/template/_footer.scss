@@ -1,0 +1,14 @@
+#footer {
+  display: flex;
+  background-color: #0984e3;
+  color: #fff;
+  height: 50px;
+  
+  .btn {
+    flex: 1;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

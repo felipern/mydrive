@@ -15,6 +15,25 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: false
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(s*)css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(ttf|eot|svg|woff2|woff)$/,
+        loader: 'file-loader'
       }
     ]
   },
